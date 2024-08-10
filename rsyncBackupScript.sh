@@ -2,7 +2,7 @@
 
 SOURCE_DIR='/mnt/Data/'
 DESTINATION_DIR='/mnt/DataBackup/'
-RSYNC_COMMAND="rsync -av --progress --dry-run --delete --exclude='/.*' --exclude='lost+found' ${SOURCE_DIR} ${DESTINATION_DIR}"
+RSYNC_COMMAND="rsync -av --progress --delete --exclude='/.*' --exclude='lost+found' ${SOURCE_DIR} ${DESTINATION_DIR}"
 RSYNC_COMMAND_DRY_RUN="$RSYNC_COMMAND --dry-run"
 
 # Prompt the user to confirm
