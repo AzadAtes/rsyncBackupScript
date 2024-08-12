@@ -3,7 +3,7 @@
 SOURCE_DIR='/home/az/'
 DESTINATION_DIR='/mnt/Backup/'
 RSYNC_COMMAND="rsync -av --progress --exclude='/.*' --exclude='lost+found' ${SOURCE_DIR} ${DESTINATION_DIR}"
-RSYNC_COMMAND_DRY_RUN="$RSYNC_COMMAND --dry-run"
+RSYNC_COMMAND_DRY_RUN="$RSYNC_COMMAND --delete --dry-run"
 RSYNC_COMMAND_WITH_DELETE="$RSYNC_COMMAND --delete"
 
 # Prompt the user to confirm
